@@ -1,0 +1,35 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - SFCategory (0.0.1):
+    - SFCategory/NSArray (= 0.0.1)
+    - SFCategory/NSDate (= 0.0.1)
+    - SFCategory/NSString (= 0.0.1)
+    - SFCategory/UIColor (= 0.0.1)
+    - SFCategory/UIImage (= 0.0.1)
+    - SFCategory/UIView (= 0.0.1)
+  - SFCategory/NSArray (0.0.1)
+  - SFCategory/NSDate (0.0.1)
+  - SFCategory/NSString (0.0.1)
+  - SFCategory/UIColor (0.0.1)
+  - SFCategory/UIImage (0.0.1)
+  - SFCategory/UIView (0.0.1):
+    - MBProgressHUD (= 0.9.1)
+
+DEPENDENCIES:
+  - SFCategory (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  SFCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SFCategory: fe476a5fda77c04aa46d13bf3d35f98bcfc5fa6d
+
+PODFILE CHECKSUM: 0be11450e79701ce909e2a130226134e0e9d393b
+
+COCOAPODS: 1.11.2

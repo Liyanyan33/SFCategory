@@ -1,0 +1,54 @@
+{
+  "name": "SFCategory",
+  "version": "0.0.1",
+  "summary": "SFCategory is a repository about category",
+  "description": "SFCategory is a repository about category by liyanyan33",
+  "homepage": "https://github.com/Liyanyan33/SFCategory.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "19053601": "1143386318@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Liyanyan33/SFCategory.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SFCategory/Classes/SFCategory.h",
+  "public_header_files": "SFCategory/Classes/SFCategory.h",
+  "subspecs": [
+    {
+      "name": "NSDate",
+      "source_files": "SFCategory/Classes/NSDate/*.{h,m}"
+    },
+    {
+      "name": "NSString",
+      "source_files": "SFCategory/Classes/NSString/*.{h,m}"
+    },
+    {
+      "name": "UIColor",
+      "source_files": "SFCategory/Classes/UIColor/*.{h,m}"
+    },
+    {
+      "name": "UIImage",
+      "source_files": "SFCategory/Classes/UIImage/*.{h,m}"
+    },
+    {
+      "name": "NSArray",
+      "source_files": "SFCategory/Classes/NSArray/*.{h,m}"
+    },
+    {
+      "name": "UIView",
+      "source_files": "SFCategory/Classes/UIView/*.{h,m}",
+      "dependencies": {
+        "MBProgressHUD": [
+          "0.9.1"
+        ]
+      }
+    }
+  ]
+}

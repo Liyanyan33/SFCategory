@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15BDCAD3C64AE55363FE4B20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		15BDCAD3C64AE55363FE4B20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3BA012F8DBC479E9CE78C817 /* Pods-SFCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCategory_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SFCategory_Tests/Pods-SFCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C22CFFF3910FBA339BD8D23 /* Pods-SFCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCategory_Tests.release.xcconfig"; path = "Target Support Files/Pods-SFCategory_Tests/Pods-SFCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SFCategory_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFCategory_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +63,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2C522D14E98FE4D8EA95B24 /* Pods_SFCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDDC1A14D72729DB4D1B4F3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CB4570EB6D8E9BC11D3B2A33 /* SFCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SFCategory.podspec; path = ../SFCategory.podspec; sourceTree = "<group>"; };
+		BDDC1A14D72729DB4D1B4F3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CB4570EB6D8E9BC11D3B2A33 /* SFCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SFCategory.podspec; path = ../SFCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DED0A34CE966E844C70A3296 /* Pods_SFCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CE8AB40159540008052183 /* Pods-SFCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCategory_Example.release.xcconfig"; path = "Target Support Files/Pods-SFCategory_Example/Pods-SFCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				3BA012F8DBC479E9CE78C817 /* Pods-SFCategory_Tests.debug.xcconfig */,
 				4C22CFFF3910FBA339BD8D23 /* Pods-SFCategory_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SFCategory_Example/Pods-SFCategory_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SFCategory/SFCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SFCategory.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
